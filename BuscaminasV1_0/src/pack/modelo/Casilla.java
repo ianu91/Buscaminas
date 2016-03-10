@@ -44,7 +44,7 @@ public abstract class Casilla {
 	}
 
 	public void setListaVecinas(ArrayList<Casilla> pListaVecinas) {
-		this.listaVecinas = pListaVecinas;
+		//this.listaVecinas = pListaVecinas;
 	}
 	
 	public abstract void destaparCasilla();
