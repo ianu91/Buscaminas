@@ -30,7 +30,10 @@ public class TableroBuilderNiv3 extends TableroBuilder {
 
 	@Override
 	public void construirTablero() {
-		// TODO Auto-generated method stub
+		super.tablero=new Tablero(12,25,50);
+		ponerFila();
+		ponerColumna();
+		ponerCasillas();
 		
 	}
 
