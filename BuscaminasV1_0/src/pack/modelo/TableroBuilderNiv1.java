@@ -15,7 +15,9 @@ public class TableroBuilderNiv1 extends TableroBuilder {
 	 * */
 	
 	@Override
-	public void ponerFila() {//prueba github}
+	public void ponerFila() {
+		//prueba github
+	}
 
 	@Override
 	public void ponerColumna() {}
