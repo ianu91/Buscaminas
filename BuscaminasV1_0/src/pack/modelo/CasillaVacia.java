@@ -1,3 +1,5 @@
+package pack.modelo;
+
 import java.util.Iterator;
 
 import pack.modelo.Casilla;
@@ -22,25 +24,21 @@ public class CasillaVacia extends Casilla {
 			Casilla act = itr.next();
 			if (act instanceof CasillaVacia) {
 				CasillaVacia c = (CasillaVacia) act;
-				c.destaparCasilla();
+				c.darVuelta();
+				c.destaparContiguas();
 			} else if (act instanceof CasillaNum) {
 				CasillaNum c = (CasillaNum) act;
-				c.darVuelta();
+				c.destaparCasilla();
 			}
 		}
 	}
 
 	public void destaparCasilla() {
-		try {
-			if (this.isDestapada()==false) {
-				this.darVuelta();
-				this.destaparContiguas();
-			}else{
-				throw 
-			}
-		} catch (Exception e) {
-			
+		if (this.isDestapada() == false) {
+			this.darVuelta();
+			this.destaparContiguas();
 		}
+
 	}
 
 	public void darVuelta() {

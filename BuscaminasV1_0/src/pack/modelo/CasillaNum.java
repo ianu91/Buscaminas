@@ -7,10 +7,6 @@ public class CasillaNum extends Casilla{
 	public CasillaNum(int pFila, int pColumna){
 		super(pFila,pColumna);
 	}
-
-	public void darVuelta(){
-		this.setDestapada(true);
-	}
 	
 	private Iterator<Casilla> getIterator() {
 		return super.getListaVecinas().iterator();
@@ -31,7 +27,7 @@ public class CasillaNum extends Casilla{
 
 	@Override
 	public void destaparCasilla() {
-		// TODO Auto-generated method stub
+		this.setDestapada(true);
 		
 	}
 	
