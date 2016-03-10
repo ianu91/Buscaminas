@@ -1,7 +1,6 @@
 package pack.modelo;
 
 import java.util.ArrayList;
-import java.util.Random;
 
 public class Tablero {
 	private int filas;
