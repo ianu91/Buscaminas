@@ -12,5 +12,6 @@ public abstract class TableroBuilder {
 	public void ponerCasillas(){
 		tablero.rellenarMatrix();
 	}
+	
 }
 
