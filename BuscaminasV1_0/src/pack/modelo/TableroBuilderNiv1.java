@@ -16,7 +16,7 @@ public class TableroBuilderNiv1 extends TableroBuilder {
 	
 	@Override
 	public void ponerFila() {
-		//prueba github
+		//prueba
 	}
 
 	@Override
