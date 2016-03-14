@@ -15,7 +15,7 @@ public class TableroBuilderNiv3 extends TableroBuilder {
 		super.tablero.setFilas(12);
 	}
 	@Override
-	public void ponerColumnas(){
+	public void ponerColumna(){
 		super.tablero.setColumnas(25);
 	}
 	@Override
