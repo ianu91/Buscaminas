@@ -1,6 +1,7 @@
 package pack.modelo;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 public class Tablero {
 	private int filas;
@@ -48,21 +49,19 @@ public class Tablero {
 		int c=r.nextInt(columnas);/*NO SE SI ES FILAS O GETFILAS?¿*/
 		while(nMinas>0){
 			if( matrix[f][c]==null){
-				CasillaBoom b=new CasillaBoom();
-				this.matrix[f][c]=b;
-				b.setFila(f);
-				b.setColumna(c);				
+				CasillaBoom b=new CasillaBoom(f,c);
+				this.matrix[f][c]=b;				
 				nMinas--;
 			}
 		}
 		for(int i=0; i<filas; i++){
 			for(int j=0; j<columnas; j++){
 				if(matrix[i][j]==null){
-					CasillaNum casillaNum =new CasillaNum();
+					CasillaNum casillaNum =new CasillaNum(i,j);
 					matrix[i][j]=casillaNum;
 					int nVecinas = casillaNum.numMinasVecinas();
 					if(nVecinas==0){
-						CasillaVacia cVacia=new CasillaVacia();
+						CasillaVacia cVacia=new CasillaVacia(i,j);
 						matrix[i][j]= cVacia;
 						cVacia.setFila(i);
 						cVacia.setColumna(j);
