@@ -10,7 +10,7 @@ public class TableroBuilderNiv2 extends TableroBuilder {
 	public static TableroBuilderNiv2 getTableroBuilderNiv2(){
 		return mTabNiv2;
 	}
-	@Override
+	/*@Override
 	public void ponerFila(){
 		super.tablero.setFilas(10);
 	}
@@ -26,14 +26,11 @@ public class TableroBuilderNiv2 extends TableroBuilder {
 	@Override
 	public void ponerCasillas(){
 		super.tablero.rellenarMatrix();
-	}
+	}*/
 
 	@Override
 	public void construirTablero() {
 		super.tablero=new Tablero(10,15,30);
-		ponerFila();
-		ponerColumna();
-		ponerCasillas();
 		
 	}
 
